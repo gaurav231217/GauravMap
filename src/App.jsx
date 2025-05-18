@@ -70,7 +70,7 @@ function App() {
                   lat: position.coords.latitude,
                  lng: position.coords.longitude,
                });
-              alert("GKT");
+              alert("Gaurav Kumar Tiwari");
               setOrigin("My current");
             },
               (error) => {
@@ -85,7 +85,9 @@ function App() {
           
        }
   return (
+    
     <div style={{ overflow:"hidden" }}>
+      Welcome to gaurav Map
       <div className="search-bar">
         <input type="text" value={origin} placeholder="From" onChange={(e)=>{setOrigin(e.target.value)}} />
         <input type="text" value={destination} placeholder="To" onChange={(e)=>{setDestination(e.target.value)}} />
